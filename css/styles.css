@@ -52,6 +52,14 @@ a {
     background-image: linear-gradient(to bottom, black 0% , black 45% , rgba(0,0,0, .5) 70% , transparent 100%);
 }
 
+.header2{
+    /*border: 1px solid red;*/
+    padding: 15px 15px 10px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0% , black 45% , rgba(0,0,0, .5) 70% , transparent 100%);
+}
+
 .navigation-item {
     list-style: none;
     /* border: 1px solid yellow;*/
@@ -73,6 +81,7 @@ a {
     margin-top: -150px;
     position: relative;
     overflow: clip;
+    left: 0;
 }
 
 .featured-details {
@@ -169,7 +178,6 @@ a {
   height: 25px;
   margin-right: 5px;
   background: url(../icons/download.svg) no-repeat center;
-  color: black;
 }
 
 .button-secondary::before {
@@ -273,7 +281,6 @@ font-size: .9em;
     color: white;
 }
 
-/* Estilos para la página de detalles de la película */
 .movie-details {
   position: relative;
   color: white;
@@ -281,7 +288,8 @@ font-size: .9em;
 }
 
 .movie-backdrop {
-  height: 60vh;
+  height: 90vh;
+  left: 450px;
   background-image: url('../images/matrix-backdrop.jpg');
   background-size: cover;
   background-position: center;
@@ -294,7 +302,7 @@ font-size: .9em;
   left: 0;
   right: 0;
   height: 100%;
-  background: linear-gradient(to top, black 0%, transparent 100%);
+  background: linear-gradient(to top, black 0%, rgba(0,0,0,.5) 30%,  transparent 100%);
 }
 
 .movie-info {
