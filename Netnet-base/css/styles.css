@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'Netflix';
+    src: url("../font/AvenirNextLTProRegular.ttc");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'Netflix';
+    src: url('../font/AvenirNextCondensed.ttc');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.credits {
+      font-family: system-ui;
+      background: #212429;
+      font-size: 11px;
+      color: white;
+      padding: 0.5rem 0;
+      text-align: center;
+}
+
+.credits a {
+    color: #F865B0;
+    text-decoration: none;
+}
+
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: 'Netflix';
+    /*padding-bottom: 108px;*/
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header{
+    /*border: 1px solid red;*/
+    padding: 15px 15px 100px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0% , black 45% , rgba(0,0,0, .5) 70% , transparent 100%);
+}
+
+.header2{
+    /*border: 1px solid red;*/
+    padding: 15px 15px 10px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0% , black 45% , rgba(0,0,0, .5) 70% , transparent 100%);
+}
+
+.navigation-item {
+    list-style: none;
+    /* border: 1px solid yellow;*/
+    text-align: center;
+}
+
+.navigation {
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid red;*/
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+
+.featured {
+    margin-top: -150px;
+    position: relative;
+    overflow: clip;
+    left: 0;
+}
+
+.featured-details {
+    /*border: 1px solid red;*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, black 0%, black 45%, rgba(0,0,0,0.5) 60%, transparent 100%);
+}
+
+
+.tags {
+    /*border: 1px solid yellow;*/
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}  
+
+.tag{
+    /*border: 1px solid red;*/
+    display: flex;
+}
+
+.tag:before {
+    content: "•";
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.tag:first-child::before {
+    display: none;
+}
+
+.featured-actions {
+    /*height: 150px;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.button {
+    /*border: 1px solid black;*/
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 1em 5px .5em;
+    border: none;
+    border-radius: 3px;
+    color: black;
+}
+
+.button::before {
+    /*border: 1px solid red;*/
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.button-secondary {
+    background: none;
+    color: white;
+    /*border: 1px solid red;*/
+    font-size: 1.1em;
+    min-width: 100px;
+    cursor: pointer;
+    border: none;
+}
+
+.icon-download {
+    background: white;
+  border: 1px solid white;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 5px 1em 5px .5em;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: 'Netflix';
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.icon-download::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  background: url(../icons/download.svg) no-repeat center;
+}
+
+.button-secondary::before {
+    content: '';
+    display: block;
+    /*border: 1px solid green;*/
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.icon-plus::before {  
+    background: url(../icons/plus.svg);
+}
+
+.icon-play::before {
+    background: url(../icons/play.min.svg);
+}
+
+.icon-info::before {
+    background: url(../icons/info.svg);
+}
+
+
+
+.list-content {
+    /*border: 1px solid red;*/
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.list-item {  
+    display: inline-block;
+    margin-left: 10px;
+}
+.list-item:first-child {
+    margin: 0;
+}
+
+.list {
+   /*border: 1px solid green;*/
+    padding: 0 1em;
+}
+
+main {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.footer {
+    /*border: 1px solid red;*/
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    padding: 1em 0;
+}
+
+
+.tab-list {
+    /*border: 1px solid green;*/
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    color: #6e6e6e;
+    padding-bottom: 1em;
+}
+.tab-list a {
+    color: #6e6e6e;
+}   
+
+.tab-item {
+/*border: 1px solid purple;*/
+text-align: center;
+font-size: .9em;
+}
+
+.tab-item svg {
+    display: block;
+    /*border: 1px solid red;*/
+    margin: auto;
+}
+
+.tab-item path {
+    fill: #6e6e6e;
+}
+
+/* .tab-item:hover path, .tab-item:hover span{
+    color: blue;
+    fill: blue;
+} */
+
+.tab-item:hover :is(path, span) {
+    fill: white;
+    color: white;
+}
+
+.movie-details {
+  position: relative;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.movie-backdrop {
+  height: 90vh;
+  left: 450px;
+  background-image: url('../images/matrix-backdrop.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.backdrop-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to top, black 0%, rgba(0,0,0,.5) 30%,  transparent 100%);
+}
+
+.movie-info {
+  padding: 0 1.5rem;
+  margin-top: -100px;
+  position: relative;
+  z-index: 2;
+}
+
+.movie-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.match-percentage {
+  color: #46d369;
+  font-weight: bold;
+}
+
+.movie-actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.movie-description {
+  margin: 1.5rem 0;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+.movie-cast {
+  margin-top: 1.5rem;
+}
+
+.movie-cast h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .movie-info {
+    padding: 0 3rem;
+  }
+  
+  .movie-title {
+    font-size: 3rem;
+  }
+}
